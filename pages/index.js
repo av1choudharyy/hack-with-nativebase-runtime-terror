@@ -17,8 +17,11 @@ import {
   AspectRatio,
 } from "native-base";
 // Start editing here, save and see your changes.
+import Setting from "./components/setting/Setting"
 export default function App() {
   return (
-    <Box></Box>
+    <Box h="100vh">
+      <Setting/>
+    </Box>
   );
 }
