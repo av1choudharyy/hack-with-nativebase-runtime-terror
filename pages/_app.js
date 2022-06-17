@@ -1,13 +1,10 @@
 import React from "react";
 import "../styles/globals.css";
-import { Box, Flex, NativeBaseProvider} from "native-base";
-import Appbar from "./components/appbar";
-import Drawer from "./components/drawer";
+import { NativeBaseProvider} from "native-base";
 
 function MyApp({ Component, pageProps }) {
   return (
     <NativeBaseProvider >
-      <Appbar/>
       <Component {...pageProps} />
     </NativeBaseProvider>
   );
