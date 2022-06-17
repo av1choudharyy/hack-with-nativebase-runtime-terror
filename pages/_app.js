@@ -1,16 +1,13 @@
 import React from "react";
 import "../styles/globals.css";
-import { NativeBaseProvider } from "native-base";
-import Appbar from "./components/appbar";
-import MainBox from "./components/screen2/MainBox";
+import { NativeBaseProvider} from "native-base";
 
 function MyApp({ Component, pageProps }) {
-    return (
-        <NativeBaseProvider >
-            <Appbar />
-            <Component {...pageProps} />
-        </NativeBaseProvider>
-    );
+  return (
+    <NativeBaseProvider >
+      <Component {...pageProps} />
+    </NativeBaseProvider>
+  );
 }
 
 export default MyApp;
