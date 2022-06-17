@@ -1,27 +1,13 @@
+import { Box } from "native-base";
 import React from "react";
-import {
-  Center,
-  useColorMode,
-  Tooltip,
-  IconButton,
-  SunIcon,
-  MoonIcon,
-  Image,
-  HStack,
-  Text,
-  Heading,
-  Box,
-  Link,
-  VStack,
-  Button,
-  AspectRatio,
-} from "native-base";
+import Drawer from "./components/drawer";
 // Start editing here, save and see your changes.
-import Setting from "./components/setting/Setting"
+import Setting from "./components/Setting"
+import Appbar from "./components/appbar";
 export default function App() {
   return (
-    <Box h="100vh">
-      <Setting/>
+    <Box h="100vh" w='100vw'>
+      <Appbar/>
     </Box>
   );
 }
