@@ -16,9 +16,12 @@ import {
   Button,
   AspectRatio,
 } from "native-base";
+import Order from "./components/Order/Order";
 // Start editing here, save and see your changes.
 export default function App() {
   return (
-    <Box></Box>
+    <Box>
+      <Order />
+    </Box>
   );
 }
