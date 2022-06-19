@@ -13,16 +13,18 @@ import {
   FavouriteIcon,
   InfoIcon
 } from "native-base";
+
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { setIconFunction } from "..";
 export default function TrackOrder() {
     const iconList=[{
-        name:<ShareIcon size='sm' color='#9CA3AF'/>
+        name:<Box alignContent='center' justifyContent='center' m='2' ><ShareIcon size='sm' _dark={{  color:"gray.500" }} _light={{  color:"gray.400" }}/></Box>
       },
       {
-        name:<FavouriteIcon size='sm' color='#9CA3AF'/>
+        name:<Box alignContent='center' justifyContent='center' m='2' ><FavouriteIcon size='sm' _dark={{  color:"gray.500" }} _light={{  color:"gray.400" }}/></Box>
       },
       {
-        name:<InfoIcon size='sm' color='#9CA3AF'/>
+        name:<Box alignContent='center' justifyContent='center' m='2' _dark={{  color:"gray.500" }} _light={{  color:"gray.400" }} ><ShoppingCartIcon fontSize="small"/></Box>
       }
       ]
     useEffect(() => {
@@ -31,9 +33,9 @@ export default function TrackOrder() {
   return (
     <Box w="100vh">
       <VStack>
-        <HStack alignItems="center" m="8" space={2}>
-          <ArrowBackIcon style={{ color: "black" }} />
-          <Text fontWeight={500}>Track Order</Text>
+        <HStack alignItems="center" m="8" space={2} >
+          <ArrowBackIcon _light={{  color:"#1F2937" }} _dark={{  color:"#F9FAFB" }}/>
+          <Text fontWeight={500} _light={{  color:"#1F2937" }} _dark={{  color:"#F9FAFB" }}>Track Order</Text>
         </HStack>
         <Box
           _light={{ bg: "white" }}
