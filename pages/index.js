@@ -16,7 +16,7 @@ import {
 } from "native-base";
 import React, { useEffect, useState } from "react";
 import TrackOrder from "./components/track-order";
-import {PersonIcon} from '@mui/icons-material/Person';
+import { Person, Group, Notifications, ShoppingBag, Settings, Policy, SupportAgent, Share, Logout } from "@mui/icons-material";
 
 export let setIconFunction = (iconList) => {};
 export let setScreenName = (screenName) => {};
@@ -33,38 +33,40 @@ export default function App() {
   setScreenName = (screenName)=>{
     setScreen(screenName)
   }
+
+  //Used MUI icons because @expo/vector-icons were giving some error in webpack config loaders
   const data = [
     {
       name: "Contact",
-      icon: "PersonIcon",
+      icon: <Person fontSize='small'/>,
     },
     {
       name: "Group",
-      icon: "GroupIcon",
+      icon: <Group fontSize='small'/>,
     },
     {
       name: "Notifications",
-      icon: "NotificationsIcon",
+      icon: <Notifications fontSize='small'/>,
     },
     {
       name: "Order",
-      icon: "ShoppingBagIcon",
+      icon: <ShoppingBag fontSize='small'/>,
     },
     {
       name: "Settings",
-      icon: "SettingsIcon",
+      icon: <Settings fontSize='small'/>,
     },
     {
       name: "Privacy Policies",
-      icon: "Policy",
+      icon: <Policy fontSize='small'/>,
     },
     {
       name: "Help and Support",
-      icon: "SupportAgentIcon",
+      icon: <SupportAgent fontSize='small'/>,
     },
     {
       name: "Refer and Earn",
-      icon: "ShareIcon",
+      icon: <Share fontSize='small' />,
     },
   ];
   return (
@@ -92,7 +94,7 @@ export default function App() {
           </HStack>
           <HStack>
             {icons.map((icon,index)=>{
-              return <Box alignContent='center' justifyContent='center' m='2'>{icon.name}</Box>
+              return icon.name
             })
             }
             <Avatar
@@ -120,7 +122,7 @@ export default function App() {
             {/* <Center flex={1}> */}
               <Avatar
                 size="xl"
-                m={1}
+                mt='8'
                 source={{
                   uri: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
                 }}
@@ -147,11 +149,22 @@ export default function App() {
               renderItem={({ item }) => (
                 <Box borderRadius={4} pl="4" pr="5" py="3">
                   <HStack space={4} ml={2} alignItems="center" flex={1}>
+                    <Box _dark={{
+                        color: "gray.50",
+                      }}
+                      _light={{
+                        color:"gray.800",
+                      }}
+                      >
+                        {item.icon}
+                      </Box>
                     <Text
                       _dark={{
-                        color: "warmGray.50",
+                        color: "gray.50",
                       }}
-                      color="coolGray.800"
+                      _light={{
+                        color:"gray.800",
+                      }}
                       bold
                     >
                       {item.name}
@@ -167,8 +180,8 @@ export default function App() {
             shadow={2}
             h="7.5vh"
           >
-            <HStack alignItems="center" space={4} ml={6} flex={1}>
-              <ShareIcon />
+            <HStack alignItems="center" space={3} ml={6} flex={1} _dark={{  color:"#F9FAFB" }} _light={{  color:"#1F2937" }}>
+              <Logout fontSize='small' />
               <Text fontWeight="500">Logout</Text>
             </HStack>
           </Box>
