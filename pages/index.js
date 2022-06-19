@@ -12,6 +12,7 @@ import {
   Divider,
 } from "native-base";
 import React from "react";
+import Setting from "./components/Setting";
 export default function App() {
   const { toggleColorMode } = useColorMode();
   const data = [
@@ -143,7 +144,7 @@ export default function App() {
         </Box>
         {/*Content Box*/}
         <Box> 
-          Hello
+          <Setting/>
         </Box>
       </Box>
     </Box>
