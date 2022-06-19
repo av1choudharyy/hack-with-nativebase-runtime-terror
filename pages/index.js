@@ -190,12 +190,9 @@ export default function App() {
         </Box>
         {/*Content Box*/}
         <Box> 
-<<<<<<< HEAD
           <Setting/>
-=======
           {screen}
           {/* Hello */}
->>>>>>> b366558cb1b6bd5f789b1644f8a4df4873787ef9
         </Box>
       </Box>
     </Box>
