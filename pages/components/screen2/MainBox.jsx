@@ -1,13 +1,12 @@
 import React from 'react'
-import { Box, Text, Center, Container, Heading, VStack } from "native-base";
+import { Box, Text, Center, Container, Heading, VStack, ArrowBackIcon } from "native-base";
 import BodyContent from './BodyContent';
-import ArrowBackIcon from "react-native-svg";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 
 const MainBox = () => {
     return (
         <VStack>
-            <Text fontFamily='SF pro' fontSize="20" mt="6vh" ml="30"><AiOutlineArrowLeft />  Body Suit</Text>
+            <Text fontFamily='SF pro' fontSize="20" mt="4vh" ml="30"><ArrowBackIcon style={{ color: "black" }} />  Body Suit</Text>
             <BodyContent />
         </VStack>
     )

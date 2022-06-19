@@ -13,6 +13,7 @@ import {
     FavouriteIcon,
 } from "native-base";
 import Image from 'next/image'
+import { FiHeart } from 'react-icons/fi'
 
 import img from '../../../public/images/screen2.jpg';
 
@@ -25,13 +26,15 @@ const BodyContent = () => {
     }
     return (
 
-        <Box bgColor="#FFFFFF" ml="5">
+        <Box bgColor="#FFFFFF" ml="5" mt="4">
 
-            <HStack>
-                <Box>
-                    <Image src={img} alt="screen2.jpg" />
+            <HStack p="8">
+                <Box borderWidth="5" borderColor="#F5F3FF" borderRadius="5">
+                    <Box borderRadius="7">
+                        <Image src={img} alt="screen2.jpg" />
+                    </Box>
                 </Box>
-                <Box>
+                <Box ml="6">
                     <Text fontWeight="510" fontSize="18px">Body Suit</Text>
                     <Text fontWeight="400" fontSize="16px" color="#6B7280">Mother care</Text>
                     <Text fontWeight="510" fontSize="20px" color="#1F2937">₹500</Text>
@@ -45,19 +48,21 @@ const BodyContent = () => {
                         <Button bgColor="#F5F3FF" alignItems="center" _text={buttonTextAttr}>0-3 M</Button>
                     </HStack>
                     <HStack space={10} mt="4">
-                        <Box bg="#F5F3FF" h="4vw" w="4vw" alignItems="center" justifyContent="center"><FavouriteIcon size="9" /></Box>
-                        <Button width="25vw" bgColor="#4C1D95" size="lg" _text={{
+                        <Box bg="#F5F3FF" h="4vw" w="4vw" alignItems="center" justifyContent="center"><FiHeart size="30" color='#4C1D95' /></Box>
+                        <Button width="25vw" bgColor="#4C1D95" size="lg" borderWidth="3px" borderColor="#4C1D95" borderRadius="5" _text={{
                             color: "#F9FAFB",
                             fontWeight: "520",
                             fontSize: "22"
                         }}>CONTINUE</Button>
                     </HStack>
                     <HStack space={10} mt="6">
-                        <Box justifyContent="center" alignItems="center" h="6vh" w="10vw" borderBottomWidth="5px" borderBottomColor="#4C1D95">
-                            <Text fontWeight="510" fontSize="18px" color="#4C1D95" height="21px">Description</Text>
+                        <Box justifyContent="center" alignItems="center" h="6vh" w="10vw" /* borderBottomWidth="5px" borderBottomColor="#4C1D95" */>
+                            <Text fontWeight="510" fontSize="18px" color="#4C1D95" height="21px" >Description</Text>
+                            <Divider mt="2" borderTopWidth="6" borderColor="#4C1D95" borderTopRadius="4" />
                         </Box>
                         <Box justifyContent="center" alignItems="center" h="6vh" w="10vw" >
                             <Text fontWeight="510" fontSize="18px" color="#6B7280" height="21px">Reviews</Text>
+                            <Divider mt="2" borderTopWidth="6" borderColor="#FFFFFF" borderTopRadius="4" />
                         </Box>
                     </HStack>
                     <Box maxWidth="33vw" mt="4">Yellow bodysuit, has a round neck with envelope detail along the shoulder, short sleeves and snap button closures along the crotch. Yellow bodysuit, has a round neck with envelope detail along the shoulder, short sleeves and snap button closures along the crotch.Yellow bodysuit, has a round neck with envelo</Box>
