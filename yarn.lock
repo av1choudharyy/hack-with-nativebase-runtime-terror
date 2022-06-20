@@ -6268,7 +6268,7 @@
     "commander" "2.20.0"
     "update-check" "1.5.3"
 
-"expo@*", "expo@^45.0.5":
+"expo@*":
   "integrity" "sha512-ND+Fo/iLZK1ubMvPFzraIQBvtGL7a4ZHGIP8N1PjcOtTGrCc6X7IWyLkfPMAck2yhd80ZTbos8vTU3SAUuBcJw=="
   "resolved" "https://registry.npmjs.org/expo/-/expo-45.0.5.tgz"
   "version" "45.0.5"

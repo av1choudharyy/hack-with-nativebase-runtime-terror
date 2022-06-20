@@ -14,7 +14,7 @@ import {
   InfoIcon,
   Icon
 } from "native-base";
-import React from "react";
+// import React from "react";
 import Setting from "./components/Setting";
 import React, { useEffect, useState } from "react";
 import TrackOrder from "./components/track-order";
