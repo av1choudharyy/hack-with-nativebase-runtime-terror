@@ -23,16 +23,17 @@ import { useState } from "react";
 const Order = () => {
   const [showModal, setShowModal] = useState(false);
   return (
-    <Box h="100%" p="50px" bg="#F5F3FF">
+    // <Box pl="50px" bg="#F5F3FF" pb="20px" w="1150px">
+    <Box margin="30px 0px 0px 30px">
       <h2 style={{ width: "300px" }}>
         {" "}
         <ArrowBackIcon color="black" mr="10px" size="5" />
         My Cart
       </h2>
-      <Box h="90%" mt="20px" mb="20px" bg="white">
+      <Box mt="20px" mb="20px" bg="white" pb="20px" w="1150px">
         <VStack space={4} alignItems="center">
           <Box w="70%" mb="30px" mt="20px" h="100px" bg="white">
-            <HStack h="100%">
+            <HStack h="90%">
               <Box w="10%">
                 <Image src={bedlamp} border="sm"></Image>
               </Box>
@@ -256,11 +257,9 @@ const Order = () => {
           </Button>
         </VStack>
       </Box>
-      <Center>
+      <Box>
         <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
           <Modal.Content maxWidth="400px">
-            <Modal.CloseButton />
-            <Modal.Header>Contact Us</Modal.Header>
             <Modal.Body>
               <FormControl>
                 <FormControl.Label>Name</FormControl.Label>
@@ -272,28 +271,21 @@ const Order = () => {
               </FormControl>
             </Modal.Body>
             <Modal.Footer>
-              <Button.Group space={2}>
-                <Button
-                  variant="ghost"
-                  colorScheme="blueGray"
-                  onPress={() => {
-                    setShowModal(false);
-                  }}
-                >
-                  Cancel
-                </Button>
-                <Button
-                  onPress={() => {
-                    setShowModal(false);
-                  }}
-                >
-                  Save
-                </Button>
-              </Button.Group>
+              <Button
+                w="100%"
+                bg="#4C1D95"
+                _hover={{ bg: "#4C1D95" }}
+                _pressed={{ bg: "#4C1D95" }}
+                onPress={() => {
+                  setShowModal(false);
+                }}
+              >
+                Continue
+              </Button>
             </Modal.Footer>
           </Modal.Content>
         </Modal>
-      </Center>
+      </Box>
     </Box>
   );
 };
