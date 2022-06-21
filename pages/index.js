@@ -16,6 +16,7 @@ import {
 } from "native-base";
 import React from "react";
 import Setting from "./components/Setting";
+import MutualFund from "./components/MutualFund";
 import { useEffect, useState } from "react";
 import TrackOrder from "./components/track-order";
 import { Person, Group, Notifications, ShoppingBag, Settings, Policy, SupportAgent, Share, Logout } from "@mui/icons-material";
@@ -190,8 +191,9 @@ export default function App() {
         </Box>
         {/*Content Box*/}
         <Box> 
-          <Setting/>
-          {screen}
+          <MutualFund/>
+          {/* <Setting/> */}
+          {/* {screen} */}
           {/* Hello */}
         </Box>
       </Box>
