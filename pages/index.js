@@ -21,10 +21,9 @@ import { useEffect, useState } from "react";
 import TrackOrder from "./components/track-order";
 import { Person, Group, Notifications, ShoppingBag, Settings, Policy, SupportAgent, Share, Logout } from "@mui/icons-material";
 import Order from "./components/Order";
-
+import Order from "./components/Order/order";
 export let setIconFunction = (iconList) => {};
 export let setScreenName = (screenName) => {};
-
 export default function App() {
   const { toggleColorMode } = useColorMode();
   const [icons,setIcons] = useState([])
@@ -75,7 +74,7 @@ export default function App() {
   ];
   return (
     //parent box for the entire page
-    <Box flex={1} _dark={{ bg: "#374151" }} _light={{ bg: "#F5F3FF" }}> 
+    <Box flex={1} _dark={{ bg: "#374151" }} _light={{ bg: "#F5F3FF" }}>
       {/*App Bar Box*/}
       <Box flex={1} _dark={{ bg: "#111827" }} _light={{ bg: "white" }}>
         <HStack
@@ -115,7 +114,7 @@ export default function App() {
       </Box>
       {/* Body Box */}
       <Box flexDirection="row">
-      {/*Navigation Drawer Box*/}
+        {/*Navigation Drawer Box*/}
         <Box w="15vw" _dark={{ bg: "#111827" }} _light={{ bg: "white" }}>
           <Divider/>
           <Box
@@ -141,11 +140,8 @@ export default function App() {
               </Text>
             {/* </Center> */}
           </Box>
-          <Divider/>
-          <Box
-            shadow={2}
-            h="60vh"
-          >
+          <Divider />
+          <Box shadow={2} h="60vh">
             <FlatList
               alignContent="center"
               mt="4"
@@ -191,11 +187,8 @@ export default function App() {
           </Box>
         </Box>
         {/*Content Box*/}
-        <Box> 
-          <Order/>
-          {/* <Setting/> */}
-          {/* {screen} */}
-          {/* Hello */}
+        <Box>
+          <Order />
         </Box>
       </Box>
     </Box>
