@@ -14,7 +14,7 @@ import {
   InfoIcon,
   Icon
 } from "native-base";
-import React from "react";
+// import React from "react";
 import Setting from "./components/Setting";
 import MutualFund from "./components/MutualFund";
 import { useEffect, useState } from "react";
