@@ -8,11 +8,19 @@ import LinkIcon from '@mui/icons-material/Link';
 import PersonOffIcon from '@mui/icons-material/PersonOff';
 import { ArrowBackIcon } from 'native-base';
 import CloudQueueIcon from '@mui/icons-material/CloudQueue';
+import Navbar from "./components/Navbar";
+import SideBar from "./components/SideBar";
 
 const Setting = () => {
     return (
         <>
-            <Box margin='30px 0px 0px 30px'>
+            <Navbar/>
+            <Box flexDirection="row">
+                <Box>
+                    <SideBar/>
+                </Box>
+                <Box bg="#F5F3FF">
+                <Box margin='30px 0px 0px 30px'>
                 <Box flexDirection='row'>
                     <ArrowBackIcon marginTop='10px' />
                     <Heading size='md' marginBottom="10px" marginLeft='12px'>settings</Heading>
@@ -60,6 +68,9 @@ const Setting = () => {
                     </Box>
                 </Box>
             </Box>
+                </Box>
+            </Box>
+            
         </>
     )
 }
