@@ -72,7 +72,7 @@ export default function SideBar() {
         //parent box for the entire page
         <Box flex={1} _dark={{ bg: "#374151" }} _light={{ bg: "#F5F3FF" }}>
           {/* Body Box */}
-          <Box flexDirection="row" h="121.5vh">
+          <Box flexDirection="row" h="100%">
             {/*Navigation Drawer Box*/}
             <Box w="15vw" _dark={{ bg: "#111827" }} _light={{ bg: "white" }} >
               <Divider/>
@@ -100,7 +100,7 @@ export default function SideBar() {
                 {/* </Center> */}
               </Box>
               <Divider />
-              <Box shadow={2} h="88.5vh" >
+              <Box shadow={2} h='60vh'>
                 <FlatList
                   alignContent="center"
                   mt="4"

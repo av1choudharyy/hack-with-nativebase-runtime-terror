@@ -3,7 +3,8 @@ import React from "react";
 import {
   Box,
   Text,
-  Button
+  Button,
+  Heading
 } from "native-base";
 // import Setting from "./components/Setting";
 // import MutualFund from "./components/MutualFund";
@@ -26,7 +27,7 @@ export default function App() {
           </Box>
           <Box width='30%' marginLeft='20px' backgroundColor='#5B21B6' color={"white"} textAlign={"center"} padding="2">
             
-              <Link href="/Product">Screen Two</Link>
+              <Link href="/components/screen2/MainBox">Screen Two</Link>
             
           </Box>
           <Box width='30%' marginLeft='20px' backgroundColor='#5B21B6' color={"white"} textAlign={"center"} padding="2">
@@ -48,6 +49,8 @@ export default function App() {
            
           </Box>
         </Box>
+
+        <Heading mt='50vh' textAlign='center'> Click on HackWithNativeBase in AppBar to change the color mode</Heading>
       </Box>
     </>
   );

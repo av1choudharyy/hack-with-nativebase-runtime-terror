@@ -9,10 +9,11 @@ const MainBox = () => {
     return (
         <>
         <Navbar/>
-        <div style={{ height: "100vh", alignSelf: "center", width: "80%", backgroundColor: "#F5F3FF", marginTop: "10vh" }}>
+        <Box style={{ height: "100vh", alignSelf: "center", marginTop: "10vh" }} _light={{ bg: "#F5F3FF" }}
+                _dark={{ bg: "#374151" }}>
             <Text fontFamily='SF pro' fontSize="20" mt="50px" ml="30"><AiOutlineArrowLeft />  Body Suit</Text>
             <BodyContent />
-        </div>
+        </Box>
         </>
         
     )

@@ -28,7 +28,7 @@ const BodyContent = () => {
     }
     return (
         <Box _light={{ bgColor: "#FFFFFF" }}
-            _dark={{ bgColor: "#1F2937" }} ml="5" mt="4">
+            _dark={{ bgColor: "#1F2937" }} mx="5" h='80vh' mb='5'>
             <HStack p="6">
                 <Box borderWidth="5" borderRadius="5" w="40vw" h="38vw"
                     _light={{ borderColor: "#F5F3FF" }}

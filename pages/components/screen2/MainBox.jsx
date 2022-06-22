@@ -8,7 +8,8 @@ const MainBox = () => {
     return (
         <>
         <Navbar/>
-        <VStack bg="#F5F3FF">
+        <VStack _light={{ bg: "#F5F3FF" }}
+                _dark={{ bg: "#374151" }}>
             <Text fontFamily='SF pro' fontSize="20" mt="4vh" ml="30"><ArrowBackIcon _light={{ color: "#1F2937" }} _dark={{ color: "#F9FAFB" }} />  Body Suit</Text>
             <BodyContent />
         </VStack>

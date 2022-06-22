@@ -44,7 +44,8 @@ export default function TrackOrder() {
         <Box>
           <SideBar />
         </Box>
-        <Box bg="#F5F3FF">
+        <Box _light={{ bg: "#F5F3FF" }}
+                _dark={{ bg: "#374151" }}>
           <Box w="100vwh">
             <VStack>
               <HStack alignItems="center" m="8" space={2} >
