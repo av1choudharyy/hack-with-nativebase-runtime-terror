@@ -203,7 +203,7 @@ export default function App() {
       <Link href="/Setting">Screen One</Link>
       <Link href="/Product">Screen Two</Link>
       <Link href="/track-order">Screen Three</Link>
-      <Link href="/">Screen Four</Link>
+      <Link href="/MutualFund">Screen Four</Link>
       <Link href="/Place-Order">Screen Five</Link>
     </>
   );
