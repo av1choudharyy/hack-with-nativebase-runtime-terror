@@ -6,7 +6,7 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 const MainBox = () => {
     return (
         <VStack>
-            <Text fontFamily='SF pro' fontSize="20" mt="4vh" ml="30"><ArrowBackIcon style={{ color: "black" }} />  Body Suit</Text>
+            <Text fontFamily='SF pro' fontSize="20" mt="4vh" ml="30"><ArrowBackIcon _light={{ color: "#1F2937" }} _dark={{ color: "#F9FAFB" }} />  Body Suit</Text>
             <BodyContent />
         </VStack>
     )
