@@ -5,16 +5,15 @@ import {
   Text,
   Button
 } from "native-base";
-import React from "react";
-import Setting from "./components/Setting";
-import MutualFund from "./components/MutualFund";
-import { useEffect, useState } from "react";
-import TrackOrder from "./components/track-order";
-import { Person, Group, Notifications, ShoppingBag, Settings, Policy, SupportAgent, Share, Logout } from "@mui/icons-material";
-import Order from "./components/Order";
-import MainBox from "./components/screen2/MainBox"
-export let setIconFunction = (iconList) => {};
-export let setScreenName = (screenName) => {};
+// import Setting from "./components/Setting";
+// import MutualFund from "./components/MutualFund";
+// import { useEffect, useState } from "react";
+// import TrackOrder from "./components/track-order";
+// import { Person, Group, Notifications, ShoppingBag, Settings, Policy, SupportAgent, Share, Logout } from "@mui/icons-material";
+// import Order from "./components/Order";
+// import MainBox from "./components/screen2/MainBox"
+// export let setIconFunction = (iconList) => {};
+// export let setScreenName = (screenName) => {};
 export default function App() {
   return (
     <>
